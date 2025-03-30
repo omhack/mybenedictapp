@@ -1,0 +1,31 @@
+android{
+	
+	namespace "com.example.mybenedictapp"
+
+	buildTypes {
+
+		debug {
+			debuggable true
+			minifyEnabled false
+			applicationIdSuffix = ".debug"
+
+			buildConfigField 'String', 'BASE_URL_API', '"https://image.tmdb.org/t/p/"'
+
+		}
+		stage {
+			debuggable true
+			minifyEnabled false
+            applicationIdSuffix = ".stage"
+
+			buildConfigField 'String', 'BASE_URL_API', '"https://image.tmdb.org/t/p/"'
+        }
+
+        release{
+        	debuggable false
+			minifyEnabled true
+
+			buildConfigField 'String', 'BASE_URL_API', '"https://image.tmdb.org/t/p/"'
+        }
+
+	}
+}

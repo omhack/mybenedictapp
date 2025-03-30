@@ -55,6 +55,8 @@ android {
     }
 }
 
+apply(from = rootProject.file("app/build-flavours.gradle"))
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
