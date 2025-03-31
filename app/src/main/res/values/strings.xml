@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyBenedictApp</string>
+    <string name="movie_detail_title">Movie Detail</string>
+    <string name="loading">Loading</string>
+    <string name="error_alert_title">Oops, something went wrong</string>
+    <string name="error_alert_text">We\’re experiencing unexpected technical issues. Check back again later.</string>
+    <string name="ok">OK</string>
+
 </resources>

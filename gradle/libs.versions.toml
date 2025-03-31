@@ -13,6 +13,11 @@ androidx_navigation_compose = "2.7.2"
 androidx_hilt_navigation_compose = "1.2.0"
 square_retrofit = "2.9.0"
 square_gson_converter = "2.9.0"
+square_logging_interceptor = "4.11.0"
+androidx_viewmodel_compose = "2.6.1"
+androidx_constraint_layout_compose = "1.0.1"
+androidx_runtime_ktx = "2.6.0"
+coil = "2.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +40,11 @@ square-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "s
 square-gson-converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "square_gson_converter" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx_navigation_compose" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidx_hilt_navigation_compose" }
+androidx-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx_viewmodel_compose" }
+androidx-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx_runtime_ktx" }
+androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "androidx_constraint_layout_compose" }
+square-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "square_logging_interceptor" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

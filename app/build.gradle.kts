@@ -67,7 +67,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation (libs.androidx.viewmodel.compose)
+    implementation (libs.androidx.runtime.compose)
+    implementation(libs.coil.compose)
 
+    implementation (libs.androidx.constraintlayout.compose)
 
     // Navigation
     implementation (libs.androidx.navigation.compose)
@@ -80,6 +84,7 @@ dependencies {
     // Retrofit
     implementation (libs.square.retrofit)
     implementation (libs.square.gson.converter)
+    implementation (libs.square.logging.interceptor)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

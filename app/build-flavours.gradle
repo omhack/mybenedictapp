@@ -9,7 +9,10 @@ android{
 			minifyEnabled false
 			applicationIdSuffix = ".debug"
 
-			buildConfigField 'String', 'BASE_URL_API', '"https://image.tmdb.org/t/p/"'
+			buildConfigField 'String', 'BASE_URL_API', '"https://api.themoviedb.org/"' // Using the same for all build types
+			buildConfigField 'String', 'IMG_URL_API', '"https://image.tmdb.org/t/p/original/"' // Using the same for all build types
+			// This should come from a remote config file
+			buildConfigField 'String', 'ACCESS_TKN', '"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDcyYjYyMDdjODZkNzQ1OWU3NWMyZThlYmQ2NDY5NCIsIm5iZiI6MTc0MjgzMzMzMS4xMTgsInN1YiI6IjY3ZTE4NmIzYjhlMGZlYTkzNDA4MmVjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xoEAcAijpGGp5URKwekSHpMVgznMbxspKgNDSWYKQMw"'
 
 		}
 		stage {
@@ -17,15 +20,21 @@ android{
 			minifyEnabled false
             applicationIdSuffix = ".stage"
 
-			buildConfigField 'String', 'BASE_URL_API', '"https://image.tmdb.org/t/p/"'
-        }
+			buildConfigField 'String', 'BASE_URL_API', '"https://api.themoviedb.org/"'
+			buildConfigField 'String', 'IMG_URL_API', '"https://image.tmdb.org/t/p/original/"' // Using the same for all build types
+			// This should come from a remote config file
+			buildConfigField 'String', 'ACCESS_TKN', '"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDcyYjYyMDdjODZkNzQ1OWU3NWMyZThlYmQ2NDY5NCIsIm5iZiI6MTc0MjgzMzMzMS4xMTgsInN1YiI6IjY3ZTE4NmIzYjhlMGZlYTkzNDA4MmVjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xoEAcAijpGGp5URKwekSHpMVgznMbxspKgNDSWYKQMw"'
+		}
 
         release{
         	debuggable false
 			minifyEnabled true
 
-			buildConfigField 'String', 'BASE_URL_API', '"https://image.tmdb.org/t/p/"'
-        }
+			buildConfigField 'String', 'BASE_URL_API', '"https://api.themoviedb.org/"'
+			buildConfigField 'String', 'IMG_URL_API', '"https://image.tmdb.org/t/p/original/"' // Using the same for all build types
+			// This should come from a remote config file
+			buildConfigField 'String', 'ACCESS_TKN', '"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NDcyYjYyMDdjODZkNzQ1OWU3NWMyZThlYmQ2NDY5NCIsIm5iZiI6MTc0MjgzMzMzMS4xMTgsInN1YiI6IjY3ZTE4NmIzYjhlMGZlYTkzNDA4MmVjNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xoEAcAijpGGp5URKwekSHpMVgznMbxspKgNDSWYKQMw"'
 
+		}
 	}
 }
