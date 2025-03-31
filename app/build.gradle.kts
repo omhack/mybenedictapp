@@ -86,6 +86,8 @@ dependencies {
     implementation (libs.square.gson.converter)
     implementation (libs.square.logging.interceptor)
 
+    testImplementation (libs.io.mock)
+    testImplementation (libs.kotlinx.coroutines.test)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

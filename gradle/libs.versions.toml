@@ -16,8 +16,10 @@ square_gson_converter = "2.9.0"
 square_logging_interceptor = "4.11.0"
 androidx_viewmodel_compose = "2.6.1"
 androidx_constraint_layout_compose = "1.0.1"
+kotlinx_coroutines_test = "1.9.0"
 androidx_runtime_ktx = "2.6.0"
 coil = "2.6.0"
+io_mock = "1.13.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -45,6 +47,8 @@ androidx-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-comp
 androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "androidx_constraint_layout_compose" }
 square-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "square_logging_interceptor" }
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+io-mock = { module = "io.mockk:mockk", version.ref = "io_mock" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx_coroutines_test" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
