@@ -5,8 +5,6 @@ import com.example.mybenedictapp.core.network.ApiStatus
 import com.example.mybenedictapp.core.network.ErrorType
 import com.example.mybenedictapp.domain.GetMoviesByPeopleIdUseCase
 import com.example.mybenedictapp.domain.NoNetworkException
-import com.example.mybenedictapp.domain.model.Movie
-import com.example.mybenedictapp.domain.model.Result
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.every
